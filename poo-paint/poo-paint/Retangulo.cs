@@ -15,8 +15,8 @@ namespace poo_paint
 
         public Retangulo(int x, int y, int largura, int altura)
         {
-            px = x;
-            py = y;
+            pro_x = x;
+            pro_y = y;
             priv_larg = largura;
             priv_altu = altura;
 
@@ -25,7 +25,7 @@ namespace poo_paint
 
         public override string Imprime()
         {
-            return "retangulo[x:" + px + ",y:" + py + ",l:" + priv_larg + ",a:" + priv_altu + "]";
+            return "retangulo[x:" + pro_x + ",y:" + pro_y + ",l:" + priv_larg + ",a:" + priv_altu + "]";
         }
 
         public static void ZeraContador()
@@ -40,7 +40,7 @@ namespace poo_paint
 
         public override void Desenha(Graphics g)
         {
-            g.DrawRectangle(Pens.Black, px, py, priv_larg, priv_altu);
+            g.DrawRectangle(Pens.Black, pro_x, pro_y, priv_larg, priv_altu);
         }
     }
 }

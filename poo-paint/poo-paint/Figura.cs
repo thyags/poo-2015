@@ -9,12 +9,12 @@ namespace poo_paint
 {
     public class Figura
     {
-        protected int px;
-        protected int py;
+        protected int pro_x;
+        protected int pro_y;
 
         public virtual string Imprime()
         {
-            return "figura[x:" + px + ",y:" + py + "]";
+            return "figura[x:" + pro_x + ",y:" + pro_y + "]";
         }
 
         public virtual void Desenha(Graphics g)

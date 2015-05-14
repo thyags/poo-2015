@@ -10,35 +10,35 @@ namespace poo_paint
     public class Circulo : Figura
     {
         private int praio;
-        static int pcontador;
+        static int contador;
 
         public Circulo(int x, int y, int raio)
         {
-            px = x;
-            py = y;
+            pro_x = x;
+            pro_y = y;
             praio = raio;
 
-            pcontador += 1;
+            contador += 1;
         }
 
         public override string Imprime()
         {
-            return "circulo[x:" + px + ",y:" + py + ",raio:" + praio + "]";
+            return "circulo[x:" + pro_x + ",y:" + pro_y + ",raio:" + praio + "]";
         }
 
         public static void ZeraContador()
         {
-            pcontador = 0;
+            contador = 0;
         }
 
         public static int LeContador()
         {
-            return pcontador;
+            return contador;
         }
 
         public override void Desenha(Graphics g)
         {
-            g.DrawEllipse(Pens.Black, px, py, praio * 2, praio * 2);
+            g.DrawEllipse(Pens.Black, pro_x, pro_y, praio * 2, praio * 2);
         }
     }
 }
