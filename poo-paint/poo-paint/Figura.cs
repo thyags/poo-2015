@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Drawing;
 
 namespace poo_paint
 {
-    public class Circulo : Figura
+    public class Figura
     {
         protected int px;
         protected int py;
