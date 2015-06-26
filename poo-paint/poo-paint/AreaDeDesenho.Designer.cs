@@ -37,14 +37,14 @@
             this.comboxFerramenta.FormattingEnabled = true;
             this.comboxFerramenta.Location = new System.Drawing.Point(0, 0);
             this.comboxFerramenta.Name = "comboxFerramenta";
-            this.comboxFerramenta.Size = new System.Drawing.Size(505, 24);
+            this.comboxFerramenta.Size = new System.Drawing.Size(530, 24);
             this.comboxFerramenta.TabIndex = 0;
             // 
             // AreaDeDesenho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(505, 402);
+            this.ClientSize = new System.Drawing.Size(530, 451);
             this.Controls.Add(this.comboxFerramenta);
             this.Name = "AreaDeDesenho";
             this.Text = "AreaDeDesenho";

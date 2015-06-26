@@ -60,6 +60,7 @@ namespace poo_paint
                 int xx = Math.Abs(e.X - xini);
                 int yy = Math.Abs(e.Y - yini);
                 int raio = (int)Math.Sqrt(xx * xx + yy * yy);
+
                 AdicionaFigura(new Circulo(xini - raio, yini - raio, raio));
             }
             else if (comboxFerramenta.SelectedIndex == 2)
@@ -75,12 +76,13 @@ namespace poo_paint
             comboxFerramenta.Items.Add("Retangulo");
             comboxFerramenta.Items.Add("Circulo");
             comboxFerramenta.Items.Add("Linha");
+
             comboxFerramenta.SelectedIndex = 0;
         }
 
         private void DesenhaArrasta(object sender, MouseEventArgs e)
         {
-            if (desenhando == 7)
+            if (desenhando == 7) //teste..... arrastando
             {
                 DesenhaCliqueFinal(sender, e);
             }
